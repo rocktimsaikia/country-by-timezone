@@ -1,0 +1,39 @@
+{
+	"name": "country-by-timezone",
+	"version": "0.0.0",
+	"description": "Get country by timezone",
+	"license": "MIT",
+	"repository": "rocktimsaikia/country-by-timezone",
+	"author": {
+		"name": "Rocktim Saikia",
+		"email": "rocktimthedev@gmail.com",
+		"url": "https://rocktimcodes.site"
+	},
+	"type": "module",
+	"exports": "./src/index.js",
+	"types": "./src/index.d.ts",
+	"engines": {
+		"node": ">=12"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"src"
+	],
+	"keywords": [
+		"country-by-timezone",
+		"country",
+		"timezone",
+		"countries",
+		"timezones",
+		"country-code"
+	],
+	"dependencies": {
+		"esm-utils": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"xo": "^0.37.0"
+	}
+}
