@@ -1,7 +1,7 @@
 {
 	"name": "country-by-timezone",
-	"version": "0.0.0",
-	"description": "Get country by timezone",
+	"version": "1.0.0",
+	"description": "Get country by it's timezone",
 	"license": "MIT",
 	"repository": "rocktimsaikia/country-by-timezone",
 	"author": {

@@ -4,7 +4,7 @@
 [![NPM Version](https://badge.fury.io/js/%40rocktimsaikia%2Fgithub-card.svg)](https://www.npmjs.com/package/@rocktimsaikia/github-card)
 ![GitHub](https://img.shields.io/github/license/rocktimsaikia/country-by-timezone)
 
-Get a country by timezone.
+Get country by it's timezone.
 
 <br/>
 
