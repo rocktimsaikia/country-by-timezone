@@ -18,9 +18,7 @@
 	"scripts": {
 		"test": "ava"
 	},
-	"files": [
-		"src"
-	],
+	"files": ["src"],
 	"keywords": [
 		"country-by-timezone",
 		"country",
