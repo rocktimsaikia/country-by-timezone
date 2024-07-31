@@ -4,8 +4,7 @@ Get country data by timezone string.
 
 > Timezone data used here is from [IANA Database](https://www.iana.org/time-zones).
 
-[![Build Status](https://github.com/rocktimsaikia/country-by-timezone/workflows/CI/badge.svg?branch=main)](https://github.com/rocktimsaikia/country-by-timezone/actions?query=branch%3Amain+workflow%3ACI)
-[![NPM Version](https://badge.fury.io/js/%40rocktimsaikia%2Fgithub-card.svg)](https://www.npmjs.com/package/@rocktimsaikia/github-card)
+[![CI](https://github.com/rocktimsaikia/country-by-timezone/actions/workflows/main.yml/badge.svg)](https://github.com/rocktimsaikia/country-by-timezone/actions/workflows/main.yml) [![npm](https://img.shields.io/npm/v/country-by-timezone?color=bright)](https://npmjs.com/package/country-by-timezone)
 
 ## Install
 
