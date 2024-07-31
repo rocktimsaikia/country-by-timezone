@@ -1,17 +1,7 @@
 import test from "ava";
 import getCountryByTimezone from "../src/index.js";
 
-test("main", (t) => {
-	t.throws(
-		() => {
-			getCountryByTimezone(123);
-		},
-		{
-			instanceOf: TypeError,
-			message: "Expected string | string[], got number",
-		},
-	);
-
+test("should return country data on valid timezone string", (t) => {
 	const indianRegion = getCountryByTimezone("Asia/Kolkata");
 	t.is(indianRegion.countryName, "India");
 	t.is(indianRegion.countryCode, "IN");
@@ -31,10 +21,22 @@ test("main", (t) => {
 	t.deepEqual(usRegion.coordinates, ["38.0000", "-97.0000"]);
 });
 
-test("Pass an array", (t) => {
+test("Should accept an array of string as argument", (t) => {
 	const indianRegion = getCountryByTimezone(["Asia/Kolkata", "Asia/Calcutta"]);
 	t.is(indianRegion.countryName, "India");
 	t.is(indianRegion.countryCode, "IN");
 	t.is(indianRegion.timeZone, "Asia/Kolkata");
 	t.deepEqual(indianRegion.coordinates, ["20.0000", "77.0000"]);
+});
+
+test("Should throw error on invalid argument", (t) => {
+	t.throws(
+		() => {
+			getCountryByTimezone(123);
+		},
+		{
+			instanceOf: TypeError,
+			message: "Expected string | string[], got number",
+		},
+	);
 });

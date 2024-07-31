@@ -13,12 +13,14 @@
 	"exports": "./src/index.js",
 	"types": "./src/index.d.ts",
 	"engines": {
-		"node": ">=12"
+		"node": ">=18"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "ava"
 	},
-	"files": ["src"],
+	"files": [
+		"src"
+	],
 	"keywords": [
 		"country-by-timezone",
 		"country",
@@ -28,10 +30,9 @@
 		"country-code"
 	],
 	"dependencies": {
-		"esm-utils": "^2.0.0"
+		"esm-utils": "^4.3.0"
 	},
 	"devDependencies": {
-		"ava": "^3.15.0",
-		"xo": "^0.37.0"
+		"ava": "^6.1.3"
 	}
 }

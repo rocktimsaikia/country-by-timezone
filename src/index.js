@@ -4,8 +4,8 @@ let countryData;
 
 function loadCountryData() {
 	if (!countryData) {
-		const { json } = createEsmUtils(import.meta);
-		countryData = json.loadSync("./data.json");
+		const { loadJsonSync } = createEsmUtils(import.meta);
+		countryData = loadJsonSync("./data.json");
 	}
 
 	return countryData;
