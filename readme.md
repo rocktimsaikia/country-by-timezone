@@ -1,6 +1,6 @@
 # country-by-timezone
 
-Get country data by it's timezone.
+Get country data by timezone string.
 
 > Timezone data used here is from [IANA Database](https://www.iana.org/time-zones).
 
@@ -35,7 +35,7 @@ console.log(country);
 
 #### getCountryByTimezone(timezone)
 
-Get a country information by it's timezone string.
+Get country information by timezone string.
 
 #### 1. `timezone`
 

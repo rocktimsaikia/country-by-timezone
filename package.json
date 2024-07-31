@@ -1,13 +1,13 @@
 {
 	"name": "country-by-timezone",
 	"version": "1.0.0",
-	"description": "Get country by it's timezone",
+	"description": "Get country data by timezone string"
 	"license": "MIT",
 	"repository": "rocktimsaikia/country-by-timezone",
 	"author": {
 		"name": "Rocktim Saikia",
 		"email": "rocktimthedev@gmail.com",
-		"url": "https://rocktimcodes.site"
+		"url": "https://rocktimsaikia.dev"
 	},
 	"type": "module",
 	"exports": "./src/index.js",
