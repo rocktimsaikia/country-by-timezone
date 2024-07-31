@@ -1,7 +1,7 @@
 {
 	"name": "country-by-timezone",
 	"version": "1.0.0",
-	"description": "Get country data by timezone string"
+	"description": "Get country data by timezone string",
 	"license": "MIT",
 	"repository": "rocktimsaikia/country-by-timezone",
 	"author": {
