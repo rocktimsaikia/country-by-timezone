@@ -1,25 +1,31 @@
-import createEsmUtils from 'esm-utils';
+import createEsmUtils from "esm-utils";
 
-const getCountryByTimezone = timezone => {
-	if (typeof timezone !== 'string' && !Array.isArray(timezone)) {
+let countryData;
+
+function loadCountryData() {
+	if (!countryData) {
+		const { json } = createEsmUtils(import.meta);
+		countryData = json.loadSync("./data.json");
+	}
+
+	return countryData;
+}
+
+export default function (timezone) {
+	if (typeof timezone !== "string" && !Array.isArray(timezone)) {
 		throw new TypeError(`Expected string | string[], got ${typeof timezone}`);
 	}
 
-	const {json} = createEsmUtils(import.meta);
-	const countries = json.loadSync('./data.json');
+	const countries = loadCountryData();
 	let result;
 
-	countries.forEach(country => {
-		if (typeof timezone === 'string' && timezone === country.timeZone) {
+	countries.forEach((country) => {
+		if (typeof timezone === "string" && timezone === country.timeZone) {
 			result = country;
-		}
-
-		if (timezone.includes(country.timeZone)) {
+		} else if (Array.isArray(timezone) && timezone.includes(country.timeZone)) {
 			result = country;
 		}
 	});
 
 	return result;
-};
-
-export default getCountryByTimezone;
+}
